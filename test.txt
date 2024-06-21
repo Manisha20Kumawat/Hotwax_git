@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 master modified
+Line 1 - master and feature combined
+
+=======
+Line 1 - new_b1
+>>>>>>> new_b1
