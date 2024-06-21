@@ -1,0 +1,861 @@
+manis@LAPTOP-MDF1B3LS MINGW64 ~ (master)
+$ ls
+ AndroidStudioProjects/                   'Missing Value.ipynb'                                                                           Untitled1.ipynb
+ AppData/                                  Music/                                                                                         Untitled2.ipynb
+'Application Data'@                       'My Documents'@                                                                                 Untitled3.ipynb
+'Bar chart dataset.ipynb'                  NTUSER.DAT                                                                                     Untitled4.ipynb
+'Bar plot.ipynb'                           NTUSER.DAT{71e15278-da07-11ee-8b23-af6edb33e3cb}.TM.blf                                        Untitled5.ipynb
+'Charts(Scatter,bar,histogram,pi).ipynb'   NTUSER.DAT{71e15278-da07-11ee-8b23-af6edb33e3cb}.TMContainer00000000000000000001.regtrans-ms   Untitled6.ipynb
+'Cisco Packet Tracer 8.2.0'/               NTUSER.DAT{71e15278-da07-11ee-8b23-af6edb33e3cb}.TMContainer00000000000000000002.regtrans-ms   Untitled7.ipynb
+ Contacts/                                 NetHood@                                                                                       Videos/
+ Cookies@                                 'New Folder (2)'/                                                                              'VirtualBox VMs'/
+'Correlation Regplot.ipynb'               'New folder'/                                                                                   anaconda3/
+'DBSCAN Clustering.ipynb'                  OneDrive/                                                                                      eclipse/
+ DBSCAN.ipynb                              Outliers.ipynb                                                                                 git/
+ Documents/                               'Pie Chart.ipynb'                                                                               git_workshop/
+ Favorites/                                PrintHood@                                                                                    'image editing'/
+ GlassFish_Server/                         PycharmProjects/                                                                              'k - Mean.ipynb'
+'HandsOn Linear Regression.ipynb'          Recent@                                                                                       'k-mean 2.ipynb'
+'Heatmap dataset.ipynb'                   'Sample Example for Linear Regression_ML Workshop.ipynb'                                        mean_mode_median.ipynb
+'Hierarchical Clustering.ipynb'           'Saved Games'/                                                                                  meanmode.ipynb
+'Histogram plot.ipynb'                     Searches/                                                                                      ntuser.dat.LOG1
+ IntelGraphicsProfiles/                    SendTo@                                                                                        ntuser.dat.LOG2
+'KNN .ipynb'                              'Start Menu'@                                                                                   ntuser.ini
+ Links/                                    Templates@                                                                                    'scatter plot.ipynb'
+'Loan scatter dataset.ipynb'               Transformation.ipynb                                                                           untitled.txt
+'Local Settings'@                          Untitled.ipynb                                                                                 workshop/
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~ (master)
+$ mkdir hotwax_git
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~ (master)
+$ cd hotwax_git
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ ls
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git -v
+git version 2.43.0.windows.1
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git init
+Initialized empty Git repository in C:/Users/manis/hotwax_git/.git/
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ ls -all
+total 44
+drwxr-xr-x 1 manis 197609 0 Jun 21 07:21 ./
+drwxr-xr-x 1 manis 197609 0 Jun 21 07:21 ../
+drwxr-xr-x 1 manis 197609 0 Jun 21 07:21 .git/
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Manisha Kumawat
+user.email=manishakumawat202004@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git config __list
+error: key does not contain a section: __list
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git config --global user.name "Manisha Kumawat"
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Manisha Kumawat
+user.email=manishakumawat202004@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ cat test.txt
+cat: test.txt: No such file or directory
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ nano test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ ls
+test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "first commit"
+[master (root-commit) d1aa393] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log
+commit d1aa3930f16f587d613f408d456fa83f28134c5f (HEAD -> master)
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:27:45 2024 +0530
+
+    first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+d1aa393 (HEAD -> master) first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add .
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "Second commit"
+[master fa03e4d] Second commit
+ 1 file changed, 1 insertion(+)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log
+commit fa03e4d06cb2bb0645d645d90d05f61f14bb5587 (HEAD -> master)
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:32:06 2024 +0530
+
+    Second commit
+
+commit d1aa3930f16f587d613f408d456fa83f28134c5f
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:27:45 2024 +0530
+
+    first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+fa03e4d (HEAD -> master) Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git diff test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/test.txt b/test.txt
+index 4096f5e..54cfcc0 100644
+--- a/test.txt
++++ b/test.txt
+@@ -1,2 +1,2 @@
+ This is my first git file.
+-This is demo file.
++This is my demo file.
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git diff --staged
+diff --git a/test.txt b/test.txt
+index 4096f5e..54cfcc0 100644
+--- a/test.txt
++++ b/test.txt
+@@ -1,2 +1,2 @@
+ This is my first git file.
+-This is demo file.
++This is my demo file.
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git diff
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "Changes commit"
+[master 536ed68] Changes commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+536ed68 (HEAD -> master) Changes commit
+fa03e4d Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch
+* master
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git checkout new_branch
+error: pathspec 'new_branch' did not match any file(s) known to git
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch
+* master
+  new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch new_branch
+fatal: a branch named 'new_branch' already exists
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git checkout new_branch
+Switched to branch 'new_branch'
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_branch)
+$ git branch
+  master
+* new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_branch)
+$ git checkout -b new_b1
+Switched to a new branch 'new_b1'
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git branch
+  master
+* new_b1
+  new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git status
+On branch new_b1
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git status
+On branch new_b1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git commit -am "new branch commit"
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+[new_b1 2bb8a9d] new branch commit
+ 1 file changed, 1 insertion(+)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git status
+On branch new_b1
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git lod --oneline
+git: 'lod' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git log --oneline
+2bb8a9d (HEAD -> new_b1) new branch commit
+536ed68 (new_branch, master) Changes commit
+fa03e4d Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git log
+commit 2bb8a9d4ce614c54f6eb6a74d8ec902182898486 (HEAD -> new_b1)
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:49:56 2024 +0530
+
+    new branch commit
+
+commit 536ed684d4ccde781f15cc67701cb336b701859f (new_branch, master)
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:35:58 2024 +0530
+
+    Changes commit
+
+commit fa03e4d06cb2bb0645d645d90d05f61f14bb5587
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:32:06 2024 +0530
+
+    Second commit
+
+commit d1aa3930f16f587d613f408d456fa83f28134c5f
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:27:45 2024 +0530
+
+    first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git checkout master
+Switched to branch 'master'
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+536ed68 (HEAD -> master, new_branch) Changes commit
+fa03e4d Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch
+* master
+  new_b1
+  new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git merge new_b1
+Updating 536ed68..2bb8a9d
+Fast-forward
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+2bb8a9d (HEAD -> master, new_b1) new branch commit
+536ed68 (new_branch) Changes commit
+fa03e4d Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log
+commit 2bb8a9d4ce614c54f6eb6a74d8ec902182898486 (HEAD -> master, new_b1)
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:49:56 2024 +0530
+
+    new branch commit
+
+commit 536ed684d4ccde781f15cc67701cb336b701859f (new_branch)
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:35:58 2024 +0530
+
+    Changes commit
+
+commit fa03e4d06cb2bb0645d645d90d05f61f14bb5587
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:32:06 2024 +0530
+
+    Second commit
+
+commit d1aa3930f16f587d613f408d456fa83f28134c5f
+Author: Manisha Kumawat <manishakumawat202004@gmail.com>
+Date:   Fri Jun 21 07:27:45 2024 +0530
+
+    first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch
+* master
+  new_b1
+  new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ echo "Line 1 -master">test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "Add on master"
+[master ee33eca] Add on master
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git checkout new_b1
+Switched to branch 'new_b1'
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ echo "Line 1 - new_b1">test.text
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git commit -am "Modify on new_b1"
+On branch new_b1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git status
+On branch new_b1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git add test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git commit -m "Modify on new branch"
+On branch new_b1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ echo "Line 1 - new_b1">test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git status
+On branch new_b1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git commit -am "Modify on new_b1"
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+[new_b1 38577cb] Modify on new_b1
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (new_b1)
+$ git checkout master
+Switched to branch 'master'
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ echo "master modified">test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -am "Modify on master"
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+[master c55870e] Modify on master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git merge new_b1
+Auto-merging test.txt
+CONFLICT (content): Merge conflict in test.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master|MERGING)
+$ git merge --abort
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "Merge new branch and resolve conflict"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -am "^C
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "Merge new branch and resolve conflict"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git diff
+diff --git a/test.txt b/test.txt
+index e886c98..72d0f05 100644
+--- a/test.txt
++++ b/test.txt
+@@ -1 +1,7 @@
++<<<<<<< HEAD
+ master modified
++Line 1 - master and feature combined
++
++=======
++Line 1 - new_b1
++>>>>>>> new_b1
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git diff --staged
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.txt
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit -m "Merge new Branch"
+[master 69b6f99] Merge new Branch
+ 1 file changed, 6 insertions(+)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+69b6f99 (HEAD -> master) Merge new Branch
+c55870e Modify on master
+ee33eca Add on master
+2bb8a9d new branch commit
+536ed68 (new_branch) Changes commit
+fa03e4d Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git add test.text
+warning: in the working copy of 'test.text', LF will be replaced by CRLF the next time Git touches it
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git commit
+[master 406fe0d] commit changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.text
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git log --oneline
+406fe0d (HEAD -> master) commit changes
+69b6f99 Merge new Branch
+c55870e Modify on master
+ee33eca Add on master
+2bb8a9d new branch commit
+536ed68 (new_branch) Changes commit
+fa03e4d Second commit
+d1aa393 first commit
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch
+* master
+  new_b1
+  new_branch
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (master)
+$ git branch -m main
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (main)
+$ git remote add origin https://github.com/Manisha20Kumawat/Hotwax_git
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (main)
+$ git remote -v
+origin  https://github.com/Manisha20Kumawat/Hotwax_git (fetch)
+origin  https://github.com/Manisha20Kumawat/Hotwax_git (push)
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (main)
+$ git push origin main
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (24/24), 1.99 KiB | 678.00 KiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Manisha20Kumawat/Hotwax_git
+ * [new branch]      main -> main
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (main)
+$ git pull origin main
+From https://github.com/Manisha20Kumawat/Hotwax_git
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+manis@LAPTOP-MDF1B3LS MINGW64 ~/hotwax_git (main)
+$
